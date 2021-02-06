@@ -21,6 +21,7 @@
   Let's first look at an example that will teach you how to use these methods.
 */
 
+
 function bushChecker() {}
 function bushChecker(name) {
   if (name.some (berryColour => berryColour != "pink")) {
@@ -30,6 +31,7 @@ function bushChecker(name) {
     return "Bush is safe to eat from";
   }
 }
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -52,13 +54,17 @@ function test(test_name, actual, expected) {
 }
 
 test(
-  "bushChecker function works - case 1",
-  bushChecker(bushBerryColours1),
-  "Toxic! Leave bush alone!"
+
+
+  "isBushSafe funtion works - case 1",
+  isBushSafe(bushBerryColours1),
+   "Toxic! Leave bush alone!"
 );
 
 test(
-  "bushChecker function works - case 1",
-  bushChecker(bushBerryColours2),
+
+  "isBushSafe funtion works - case 1",
+  isBushSafe(bushBerryColours2),
+
   "Bush is safe to eat from"
 );
