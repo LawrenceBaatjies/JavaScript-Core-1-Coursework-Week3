@@ -22,6 +22,14 @@
 */
 
 function bushChecker() {}
+function bushChecker(name) {
+  if (name.some (berryColour => berryColour != "pink")) {
+    return "Toxic! Leave bush alone!";
+  }
+  else {
+    return "Bush is safe to eat from";
+  }
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -44,13 +52,13 @@ function test(test_name, actual, expected) {
 }
 
 test(
-  "bushChecker funtion works - case 1",
+  "bushChecker function works - case 1",
   bushChecker(bushBerryColours1),
   "Toxic! Leave bush alone!"
 );
 
 test(
-  "bushChecker funtion works - case 1",
+  "bushChecker function works - case 1",
   bushChecker(bushBerryColours2),
   "Bush is safe to eat from"
 );
